@@ -101,7 +101,7 @@ def edge_gpt_img_save(text: str, language_code: str):
 
     # Створення директорії для збереження зображень (якщо вона ще не існує)
     filename = text
-    image_directory = f"./bingIMG/{language_code}"
+    image_directory = f"./bing_img/{language_code}"
     if not os.path.exists(image_directory):
         os.makedirs(image_directory)
     image_directory += f"/{text}"
@@ -154,7 +154,7 @@ def main_func_edge_gpt_img_save(text: str, language_code: str = "ua", save_cook:
 
 
 if __name__ == '__main__':
-    main_func_edge_gpt_img_save("чай", "pl")
+    main_func_edge_gpt_img_save("чай", "fr")
     # input()
 
 # <input name="q" class="b_searchbox gi_sb" id="sb_form_q" title="" type="search" value="tree in Canada, bright, picturesque,  postcard" aria-label="Хочете дізнатися, як працює Творець зображень? Виберіть &quot;Здивуй мене&quot;, а потім – &quot;Створити&quot;" placeholder="Хочете дізнатися, як працює Творець зображень? Виберіть &quot;Здивуй мене&quot;, а потім – &quot;Створити&quot;" autocapitalize="off" autocorrect="true" autocomplete="off" spellcheck="true" aria-live="polite" maxlength="480" data-maxlength="480">
